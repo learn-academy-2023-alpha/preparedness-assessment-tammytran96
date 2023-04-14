@@ -1,0 +1,2 @@
+What is the relationship between a model called person, a model called house, and a model called car?
+    - the relationship between a model called person, a model called house, and a model called car is that these models are all associated with each other. the model called Person has_many houses and cars, while the House and Car models belongs_to the Person. The House and Car model will have a foreign id called person_id to indicate which instance of Person they belong to. 

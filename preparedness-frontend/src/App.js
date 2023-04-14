@@ -7,7 +7,12 @@ const App = () => {
 
   const [input, setInput] = useState("")
   const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
+
+  const toggle = () => {
+    if (input === ""){
+      alert("Please enter a name")
+    }
+  else setModal(!modal)}
   
   const clearInput = () => {
     setInput("")
@@ -34,4 +39,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
